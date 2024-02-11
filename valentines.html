@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yes or No Animation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #animation-container {
+    width: 300px;
+    height: 300px;
+    
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+
+  }
+  #yes-animation {
+    display: none;
+  }
+  #question{
+  	color: red;
+  }
+  button {
+  color: white;
+  background-color: red;
+  border: none; /* Remove the border */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+  margin: 0 10px; /* Add margin to separate buttons */
+}
+
+button:hover {
+  background-color: pink; /* Change background color on hover */
+}
+</style>
+</head>
+<body>
+<h1> <div id="question">Will You be my val?</div></h1> 
+  <button onclick="showAnimation('yes')">Yes</button>
+  <button onclick="showAnimation('no')">No</button>
+  <div id="animation-container">
+    <div id="yes-animation">😊</div>
+    <div id="no-animation">😢</div>
+  </div>
+<script>
+  function showAnimation(answer) {
+    if (answer === 'yes') {
+      document.getElementById('yes-animation').style.display = 'block';
+      document.getElementById('no-animation').style.display = 'none';
+    } else if (answer === 'no') {
+      document.getElementById('yes-animation').style.display = 'none';
+      document.getElementById('no-animation').style.display = 'block';
+    }
+  }
+</script>
+<head>
+	<title>valetines</title>
+	<link rel="stylesheet" type="text/css" href="css/valentines.css">
+</head>
+<body>
+<video autoplay loop muted playsinline>
+	<source src="videos/love.mp4" type="">
+</video>
+<!DOCTYPE html>
+
+</body>
+</html>
+</body>
+</html>
